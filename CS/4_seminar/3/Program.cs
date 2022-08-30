@@ -19,7 +19,7 @@ for (int i = 0; i < n; i++)
         }
         //Строку ниже можно раскомментировать и тогда будут видны все генерируемые случайные числа
         //Console.WriteLine($"num = {num} mult = {mult} sum = {sum} % = {mult % sum}");
-    } while (mult % sum != 0);
+    } while (!((mult % sum == 0) && (mult != 0)));
     interesting_numbers[i] = num;
 }
 Console.WriteLine(String.Join(", ", interesting_numbers));
